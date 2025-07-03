@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Grilled Chicken Salad",
+      "price": 129,
+      "image": "grilled-chicken.png",
+      "type": "post-workout"
+
+    },
+    {
+      "id": 2,
+      "name": "Salmon with Roasted Vegetables",
+      "price": 149,
+      "image": "salmon.png",
+      "type": "post-workout"
+    },
+    {
+      "id": 3,
+      "name": "Quinoa Bowl",
+      "price": 109,
+      "image": "quinoa.png",
+      "type": "post-workout"
+    },
+    {
+      "id": 4,
+      "name": "Shrimp Stir Fry",
+      "price": 140,
+      "image": "Shrimp-Stir-Fry.png",
+      "type": "post-workout"
+    },
+    {
+      "id": 5,
+      "name": "Turkey Wrap",
+      "price": 99,
+      "image": "Turkey-Wrap.png",
+      "type": "post-workout"
+    },
+    {
+      "id": 6,
+      "name": "Fruit salad",
+      "price": 80,
+      "image": "Fruit-Salad.png",
+      "type": "pre-workout"
+    },
+    {
+      "id": 7,
+      "name": "Electrolyte",
+      "price": 40,
+      "image": "electrolyte.png",
+      "type": "pre-workout"
+    },
+    {
+      "id": 8,
+      "name": "Chia Pudding",
+      "price": 109,
+      "image": "ChiaPud.png",
+      "type": "pre-workout"
+    },
+    {
+      "id": 9,
+      "name": "Energy Smoothie",
+      "price": 89,
+      "image": "energy-smoothie.png",
+      "type": ["pre-workout", "drink"]
+    },
+    {
+      "id": 10,
+      "name": "Green Juice",
+      "price": 70,
+      "image": "green-smoothie.png",
+      "type": ["pre-workout", "drink"]
+    },
+    {
+      "id": 11,
+      "name": "Caribbean",
+      "price": 30,
+      "image": "Careibbean.png",
+      "type": ["pre-workout", "drink"]
+    },
+    {
+      "id": 12,
+      "name": "Berruba",
+      "price": 30,
+      "image": "Berruba.png",
+      "type": ["pre-workout", "drink"]
+    },
+    {
+      "id": 13,
+      "name": "Arancia",
+      "price": 30,
+      "image": "Arancia.png",
+      "type": ["pre-workout", "drink"]
+    }
+  ],
+  "orders": [],
+  "users": []
+}

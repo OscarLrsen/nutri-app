@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #F9F5EF;
+  color: #1b160e;
+}
+
+.topLogo {
+  color: #D29628;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #f3efe8;
+  background-color: white;
+  position: sticky;
+  top: 0;
+
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b160e;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px; 
+}
+
+
+
+.logo { 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #1b160e;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #df9f1f;
+  background-color: transparent;
+  color: #1b160e;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #df9f1f;
+  color: white;
+}
+
+nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #1b160e;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-yellow {
+  background-color: #df9f1f;
+  color: #1b160e;
+}
+
+.btn-light {
+  background-color: #f3efe8;
+  color: #1b160e;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 54px;
+  font-weight: 540;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons button {
+  margin: 0 10px;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.PopularMealssection {
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 24px;
+}
+
+.meal-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 8px;
+  width: 80%;
+}
+
+.meal-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.meal-card h3 {
+  margin: 10px 0 4px;
+  font-size: 16px;
+}
+
+.meal-card p {
+  font-size: 14px;
+    margin: 2px 0;
+
+  color: #957e50;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-top: 1px solid #e6dfd1;
+  margin-top: 60px;
+}
+
+.btm-nav-link {
+  margin: 0 80px;
+  font-size: 34px;
+  font-weight: 500;
+  color: #947D4F;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+
+
+.btm-nav-link:hover {
+  color: #df9f1f;
+}
