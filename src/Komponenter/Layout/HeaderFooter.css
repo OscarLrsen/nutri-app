@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #f3efe8;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+    /* Allign regardless of device */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topLogo {
+  color: #000000;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  /* Allign regardless of device */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Allign regardless of device */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b160e;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  /* Allign regardless of device */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn-yellow {
+  background-color: #df9f1f;
+  color: #1b160e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn-light {
+  background-color: #f3efe8;
+  color: #1b160e;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background: white;
+  border-top: 1px solid #e6dfd1;
+  padding: 40px 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+
+.btm-nav-link {
+  margin: 0 80px;
+  font-size: 34px;
+  font-weight: 500;
+  color: #947D4F;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btm-nav-link:hover {
+  color: #df9f1f;
+}
+
+.btn-nav-login {
+  background-color: #e69e2d; /* Orange color */
+  color: #1b160e;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px; /* Fully rounded */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
