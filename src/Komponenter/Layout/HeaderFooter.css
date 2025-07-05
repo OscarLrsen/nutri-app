@@ -4,25 +4,35 @@ header {
   align-items: center;
   padding: 16px 40px;
   border-bottom: 1px solid #f3efe8;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: sticky;
   top: 0;
   z-index: 100;
+    /* Allign regardless of device */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .topLogo {
-  color: #D29628;
+  color: #000000;
   font-size: 60px;
   font-weight: bold;
   font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 1px;
   cursor: pointer;
+  /* Allign regardless of device */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-buttons {
   display: flex;
   align-items: center;
   gap: 20px;
+  /* Allign regardless of device */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -40,11 +50,18 @@ header {
   font-size: 14px;
   cursor: pointer;
   border: none;
+  /* Allign regardless of device */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .btn-yellow {
   background-color: #df9f1f;
   color: #1b160e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .btn-light {
@@ -75,4 +92,15 @@ footer {
 
 .btm-nav-link:hover {
   color: #df9f1f;
+}
+
+.btn-nav-login {
+  background-color: #e69e2d; /* Orange color */
+  color: #1b160e;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px; /* Fully rounded */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }

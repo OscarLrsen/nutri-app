@@ -12,8 +12,10 @@ export default function Menu() {
   const { addToCart } = useCart(); // Använder global CartContext för att lägga till i kundvagn
 
   // Hämta menyn från json-server vid första renderingen
+  // Added const serverIp below to fetch IP from user instead of localhost
+  const serverIp = import.meta.env.VITE_SERVER_IP;
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch(`http://${serverIp}:3000/products`)
       .then((res) => res.json())
       .then((data) => setMeals(data))
       .catch((err) => console.error("Error fetching meals:", err));

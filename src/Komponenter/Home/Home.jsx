@@ -10,10 +10,12 @@ import HeroSektion from "./HeroSektion";
 
 export default function Home() {
   const [meals, setMeals] = useState([]);
-  
+
+//Added const serverIp below to fetch IP from user instead of localhost
+const serverIp = import.meta.env.VITE_SERVER_IP;
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch(`http://${serverIp}:3000/products`)
       .then((res) => res.json())
       .then((data) => setMeals(data))
       .catch((err) => console.error("Error fetching meals:", err));

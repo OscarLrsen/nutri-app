@@ -21,6 +21,7 @@ export default function Header() {
           <span className="nav-link" onClick={() => navigate("/")}>Home</span>
           <span className="nav-link"onClick={() => window.open("https://www.newton.se/", "_blank")}>About Us</span>
           <span className="nav-link"onClick={() => window.open("https://www.newton.se/", "_blank")}>Contact Us</span>
+          <span className="btn-nav-login"onClick={() => navigate("/Login")}>Login</span>
         </nav>
 
       <button 
@@ -29,6 +30,7 @@ export default function Header() {
       >
         Find Us
       </button>
+
 
 
         <CartButton totalItems={totalQuantity} />
