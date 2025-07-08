@@ -9,19 +9,19 @@ function Login() {
       <Header />
 
       <main className="login-container">
-        <h1>Logga in</h1>
-        <p>Detta är din nya inloggningssida.</p>
+
+        <h1 className="login-title">Logga in till din hälsosamma framtid</h1>
 
         <form className="login-form">
           <input
             type="email"
-            className="input-field"
+            className="login-input"
             placeholder="Email"
             required
           />
           <input
             type="password"
-            className="input-field"
+            className="login-input"
             placeholder="Password"
             required
           />
@@ -31,18 +31,23 @@ function Login() {
         </form>
 
         <div className="divider">
-          <span>eller logga in med</span>
+          <span>Eller logga in med</span>
         </div>
 
         <div className="social-login">
-          <button className="social-button google-button">Google</button>
-          <button className="social-button apple-button">Apple</button>
+          <button className="social-button">Google</button>
+          <button className="social-button">Apple</button>
         </div>
       </main>
 
+      <div className="signup-container">
+        <span className="signup-text">Inte medlem?</span>
+        <button className="signup-button">Skapa konto</button>
+      </div>
       <Footer />
     </>
   );
 }
+
 
 export default Login;

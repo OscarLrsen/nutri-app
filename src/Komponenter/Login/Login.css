@@ -1,15 +1,113 @@
+/* Reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .login-container {
-  padding: 2rem;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 18px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.login-container h1 {
-  color: #e69e2d;
-  font-size: 2rem;
+.login-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #222;
 }
 
-.login-container p {
-  color: #333;
-  font-size: 1.2rem;
-  padding: 1;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  padding: 15px;
+  border: none;
+  background-color: #f4f0ee;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: #d1903b;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #b37631;
+}
+
+.divider {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.social-login {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-button {
+  flex: 1;
+  padding: 12px;
+  background-color: #f4f0ee;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-button:hover {
+  background-color: #e2ddd9;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.signup-text {
+  color: #666;
+  font-size: 14px;
+}
+
+.signup-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.signup-button:hover {
+  color: #0056b3;
 }
