@@ -1,28 +1,23 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Headerfooter.css";
 
 export default function Header() {
-  const navigate = useNavigate();
 
   return (
-    <header className="header">
-      <div className="header">
-        <div className="header-left" onClick={() => console.log("öppna meny")}>
-          <span className="material-icons">menu</span>
-        </div>
-
-        <div className="header-center" onClick={() => navigate("/")}>
-          Nutri
-        </div>
-
-        <div className="header-right">
-          <span className="login-text" onClick={() => navigate("/login")}>
-            Logga in
-          </span>
-        </div>
+    <header className="nutri-header">
+      <div className="menu">
+        <button className="menu-btn">☰ Meny</button>
       </div>
 
+      <div className="logo">
+        <a href="/">
+          <img src="src\Bilder\NUTRIVIT.jpeg" alt="NUTRI" />
+        </a>
+      </div>
+
+      <div className="login">
+        <a href="/login">Logga in</a>
+      </div>
     </header>
   );
 }
