@@ -1,73 +1,79 @@
-header {
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #ffffff;
   border-bottom: 1px solid #f3efe8;
-  background-color: rgb(255, 255, 255);
+  height: 60px;
   position: sticky;
   top: 0;
-  z-index: 100;
-    /* Allign regardless of device */
-  flex-wrap: wrap;
-  justify-content: space-between;
+  z-index: 1000;
 }
 
-.topLogo {
-  color: #000000;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  letter-spacing: 1px;
-  cursor: pointer;
-  /* Allign regardless of device */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.nav-buttons {
+/* Vänster – hamburgermeny */
+.header-left {
   display: flex;
   align-items: center;
-  gap: 20px;
-  /* Allign regardless of device */
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 60px;
 }
 
-.nav-link {
-  font-size: 15px;
+.material-icons {
+  font-size: 28px;
+  color: #1b160e;
+  cursor: pointer;
+}
+
+/* Mitten – logga */
+.header-center {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #df9f1f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+  margin: 30px;
+}
+
+/* Höger – Logga in */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60px;
+}
+
+.login-text {
+  font-size: 16px;
   font-weight: 600;
   color: #1b160e;
-  margin: 0 20px;
   cursor: pointer;
 }
 
-.btn {
-  padding: 10px 16px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  border: none;
-  /* Allign regardless of device */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* Responsivt för små skärmar */
+@media (max-width: 480px) {
+  .header {
+    height: 56px;
+    padding: 0px 40px;
+  }
+
+  .header-center {
+    font-size: 30px;
+  }
+
+  .material-icons {
+    font-size: 24px;
+  }
+
+  .login-text {
+    font-size: 14px;
+  }
 }
 
-.btn-yellow {
-  background-color: #df9f1f;
-  color: #1b160e;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.btn-light {
-  background-color: #f3efe8;
-  color: #1b160e;
-}
+
 
 /* FOOTER */
 footer {
