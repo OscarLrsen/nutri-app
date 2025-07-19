@@ -1,73 +1,159 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  border-bottom: 1px solid #f3efe8;
-  background-color: rgb(255, 255, 255);
-  position: sticky;
+.off-screen-menu {
+  background-color: white;
+  height: 100vh;
+  width:100%;
+  max-width: 450px;
+  position: fixed;
   top: 0;
-  z-index: 100;
-    /* Allign regardless of device */
-  flex-wrap: wrap;
-  justify-content: space-between;
+  left: -450px;
 }
 
-.topLogo {
-  color: #000000;
-  font-size: 60px;
-  font-weight: bold;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  letter-spacing: 1px;
-  cursor: pointer;
-  /* Allign regardless of device */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.nav-buttons {
+.menu {
+  grid-area: menu;
   display: flex;
   align-items: center;
-  gap: 20px;
-  /* Allign regardless of device */
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start; /* tryck till vänster */
 }
-
-.nav-link {
-  font-size: 15px;
-  font-weight: 600;
-  color: #1b160e;
-  margin: 0 20px;
+.ham-menu {
+  height: 40px;
+  width: 40px;
+  position: relative;
   cursor: pointer;
 }
 
-.btn {
-  padding: 10px 16px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
+
+.ham-menu span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #e9ae41;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 8px;
+}
+
+.ham-menu span:nth-child(2) {
+  top: 18px;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 28px;
+}
+
+
+.ham-menu.open span:nth-child(1) {
+  transform: translate(-50%, 50%) rotate(45deg);
+  top: 50%;
+}
+
+.ham-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.open span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.nutri-header {
+  display: grid;
+  grid-template-areas: "menu logo login";
+    grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+  height: 64px;
+  padding: 0 1rem;
+  background-color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 2px solid #eee;
+}
+
+/* 🔵 Vänstra grid-rutan (Meny) */
+.menu {
+  background-color: none;
+    grid-area: menu;
+
+}
+
+/* 🟡 Mitten (Logo) */
+.logo {
+  background-color: none;
+
+  text-align: center;
+    grid-area: logo;
+
+}
+
+.logo img {
+  max-height: 35px;
+  display: inline-block;
+}
+
+/* 🔴 Högra grid-rutan (Login) */
+.login {
+  background-color: none;
+  text-align: right;
+    grid-area: login;
+
+}
+
+.menu-btn {
+  font-size: 20px;
+  padding: 0.5rem;
+  background: none;
   border: none;
-  /* Allign regardless of device */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  color: #D29628;
+  cursor: pointer;
+
 }
 
-.btn-yellow {
-  background-color: #df9f1f;
-  color: #1b160e;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.login a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #D29628;
+  padding: 0.5rem;
 }
 
-.btn-light {
-  background-color: #f3efe8;
-  color: #1b160e;
+@media (max-width: 390px) {
+  .nutri-header {
+    grid-template-areas: "logo menu"; /* 🔁 BYTER plats på logga och meny */
+    grid-template-columns: 1fr auto;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .logo {
+    text-align: left; /* Loggan nu till vänster */
+  }
+
+  .menu {
+    text-align: right; /* Menyknapp nu till höger */
+  }
 }
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {

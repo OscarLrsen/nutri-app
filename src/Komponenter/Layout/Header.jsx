@@ -1,39 +1,48 @@
-import React from "react";
-import "./HeaderFooter.css";
-import { useCart } from "../../Kontext/CartContext";
-import CartButton from "../Cart/CartButton";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import "./Headerfooter.css";
 
 export default function Header() {
-  const { cartItems } = useCart();
-  const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  const navigate = useNavigate();
+
+
+const [menuOpen, setMenuOpen] = useState(false);
+
+const toggleMenu = () => {
+  setMenuOpen(prev => !prev);
+};
 
   return (
-    <header>
-      {/* Klickbar logotyp */}
-      <div className="topLogo" onClick={() => navigate("/")}>
-        NUTRI
+    <header className="nutri-header">
+      {/* Menyn som skjuts in */}
+      <div className={`off-screen-menu ${menuOpen ? "active" : ""}`}>
+        <ul>
+          <li onClick={toggleMenu}>Home</li>
+          <li onClick={toggleMenu}>About</li>
+          <li onClick={toggleMenu}>Contact</li>
+        </ul>
       </div>
 
-      <div className="nav-buttons">
-        <nav>
-          <span className="nav-link" onClick={() => navigate("/")}>Home</span>
-          <span className="nav-link"onClick={() => window.open("https://www.newton.se/", "_blank")}>About Us</span>
-          <span className="nav-link"onClick={() => window.open("https://www.newton.se/", "_blank")}>Contact Us</span>
-          <span className="btn-nav-login"onClick={() => navigate("/Login")}>Login</span>
-        </nav>
+      {/* Hamburgerknapp */}
+      <nav className="menu">
+        <div
+          className={`ham-menu ${menuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
 
-      <button 
-        className="btn btn-yellow" 
-        onClick={() => window.open("https://www.google.com/maps/place/Norra+Bulltoftavägen+65C,+212+43+Malmö", "_blank")}
-      >
-        Find Us
-      </button>
+      {/* Logotyp */}
+      <div className="logo">
+        <a href="/">
+          <img src="src\Bilder\NUTRIVIT.jpeg" alt="NUTRI" />
+        </a>
+      </div>
 
-
-
-        <CartButton totalItems={totalQuantity} />
+      {/* Login-länk */}
+      <div className="login">
+        <a href="/login">Logga in</a>
       </div>
     </header>
   );
