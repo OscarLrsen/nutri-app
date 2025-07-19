@@ -1,15 +1,151 @@
+/* Center the entire login page content */
 .login-container {
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 100px); /* adjust if your header/footer height differs */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .login-container h1 {
-  color: #e69e2d;
-  font-size: 2rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1c1c1c;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .login-container p {
-  color: #333;
-  font-size: 1.2rem;
-  padding: 1;
+  color: #4a4a4a;
+  margin-bottom: 1.5em;
+  font-size: 14px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5f1ef;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #d49133;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #b8782a;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #666666;
+  font-size: 14px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #ccc;
+  flex: 1;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-login {
+  margin-bottom: 10px;
+}
+
+.social-button {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.google-button {
+  background-color: #4285f4;
+  color: white;
+}
+
+.google-button:hover {
+  background-color: #357ae8;
+}
+
+.facebook-button {
+  background-color: #1877f2;
+  color: white;
+}
+
+.facebook-button:hover {
+  background-color: #145dbf;
+}
+
+.apple-button {
+  background-color: #000000;
+  color: white;
+}
+
+.apple-button:hover {
+  background-color: #333333;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.terms {
+  font-size: 12px;
+  color: #4a4a4a;
+  margin-top: 20px;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: #d49133;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
